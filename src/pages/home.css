@@ -1,0 +1,29 @@
+.home-page {
+  background-color: black;
+  padding-bottom: 0rem; /* Space for posts */
+}
+
+.hero-section {
+  background-image: url('https://media.wired.com/photos/64cd92b682d37ced55dff7f7/master/w_1920,c_limit/VR-Rap-HH50-Package-Culture-1426593257.jpg');
+  background-size: auto ;
+  background-position: center;
+  height: 750px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 20rem;
+  position: center;
+}

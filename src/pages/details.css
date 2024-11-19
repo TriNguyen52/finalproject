@@ -1,0 +1,203 @@
+/* Root variables for theme */
+:root {
+  --macaroni-and-cheese: #fbc57a;
+  --aubergine: #1f050e;
+  --shocking-pink: #fa12c0;
+  --crusta: #f98227;
+  --pomegranate: #f92821;
+  --rose: #f51c81;
+  --rose-bud-cherry: #910a45;
+  --international-orange: #fa560e;
+  --champagne: #fbf1cf;
+  --tobacco-brown: #746443;
+}
+
+/* General styling */
+body {
+  background-color: var(--aubergine);
+  color: var(--champagne);
+  font-family: "Bangers", system-ui;
+  margin: 0;
+}
+
+/* Details Page Styling */
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Post Card Styling */
+.post-card {
+  background-color: var(--macaroni-and-cheese);
+  border-radius: 15px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.post-card h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--pomegranate);
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--tobacco-brown);
+  margin-bottom: 10px;
+}
+
+.post-card .no-link {
+  font-style: italic;
+  color: var(--aubergine);
+}
+
+.post-card a {
+  color: var(--international-orange);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post-card a:hover {
+  text-decoration: underline;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.card-footer .upvote,
+.card-footer .edit {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-footer .upvote {
+  background-color: var(--international-orange);
+  color: var(--champagne);
+}
+
+.card-footer .upvote:hover {
+  background-color: var(--crusta);
+}
+
+.card-footer .edit {
+  background-color: var(--shocking-pink);
+  color: var(--champagne);
+}
+
+.card-footer .edit:hover {
+  background-color: var(--rose);
+}
+
+.success-message {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--macaroni-and-cheese);
+  margin-top: 15px;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--champagne);
+  border-top: 5px solid var(--macaroni-and-cheese);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Comment Section Styling */
+.comment-card {
+  background-color: var(--macaroni-and-cheese);
+  border-radius: 15px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.comment-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--pomegranate);
+  margin-bottom: 15px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid var(--macaroni-and-cheese);
+  border-radius: 8px;
+  background-color: var(--champagne);
+  color: var(--aubergine);
+  resize: none;
+  box-sizing: border-box;
+}
+
+.comment-form textarea:focus {
+  border-color: var(--rose);
+  outline: none;
+}
+
+.comment-form button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: var(--shocking-pink);
+  color: var(--champagne);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: var(--rose);
+}
+
+.comment {
+  background-color: var(--macaroni-and-cheese);
+  color: var(--aubergine);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.comment small {
+  font-size: 0.8rem;
+  color: var(--tobacco-brown);
+  display: block;
+  margin-top: 5px;
+}
+
+.error-message {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--rose-bud-cherry);
+  margin-top: 15px;
+}

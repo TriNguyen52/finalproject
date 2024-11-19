@@ -1,0 +1,130 @@
+:root {
+  --macaroni-and-cheese: #fbc57a;
+  --aubergine: #1f050e;
+  --shocking-pink: #fa12c0;
+  --crusta: #f98227;
+  --pomegranate: #f92821;
+  --rose: #f51c81;
+  --rose-bud-cherry: #910a45;
+  --international-orange: #fa560e;
+  --champagne: #fbf1cf;
+  --tobacco-brown: #746443;
+}
+
+/* General Gallery Styling */
+.gallery-page {
+  padding: 40px;
+  background: var(--aubergine);
+  color: var(--champagne);
+  font-family: "Bangers", sans-serif; /* Updated font */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Gallery Title */
+.gallery-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--shocking-pink);
+  text-shadow: 0 0 10px var(--shocking-pink), 0 0 20px var(--crusta);
+}
+
+/* Sort Dropdown */
+.sort-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.sort-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid var(--champagne);
+  background: var(--aubergine);
+  color: var(--champagne);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sort-select:hover {
+  background: var(--champagne);
+  color: var(--aubergine);
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: flex;
+  flex-direction: column; /* Stack posts vertically */
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card Styling */
+.gallery-card {
+  background: linear-gradient(135deg, var(--rose), var(--crusta));
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  min-width: 500px; /* Minimum width */
+  max-width: 600px;
+  text-align: left; /* Align content to the right */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--rose-bud-cherry);
+}
+
+.gallery-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(250, 86, 14, 0.5);
+}
+
+/* Card Title */
+.gallery-card-title {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: var(--champagne);
+  text-shadow: 0 0 10px var(--shocking-pink), 0 0 20px var(--rose);
+}
+
+/* Card Concert Type */
+.gallery-card-concert {
+  font-size: 1rem;
+  color: var(--macaroni-and-cheese);
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Stats Section */
+.gallery-card-stats {
+  font-size: 0.9rem;
+  color: var(--tobacco-brown);
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Link Button */
+.view-post-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, var(--international-orange), var(--rose));
+  color: var(--champagne);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(250, 86, 14, 0.3);
+}
+
+.view-post-link:hover {
+  background: linear-gradient(135deg, var(--rose), var(--international-orange));
+  box-shadow: 0 8px 20px rgba(250, 18, 192, 0.5);
+}

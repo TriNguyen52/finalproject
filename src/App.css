@@ -1,0 +1,81 @@
+#root {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Ensures layout stacking */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-content {
+  margin-top: 10px;
+  padding-top: 60px;
+  min-height: calc(100vh - 80px); /* Navbar height subtraction */
+  background-color: #121212; /* Match background */
+}
+
+/* App Container */
+.app-container {
+  background-color: #121212; /* Dark background */
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack NavBar at the top */
+  overflow: hidden; /* Prevent scrolling issues */
+}
+
+/* NavBar Styling */
+.nav-container {
+  background-color: #333; /* Dark background */
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 70px; /* Navbar height */
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Main Layout */
+.main-layout {
+  flex-grow: 1;
+  margin-top: 70px; /* Offset content below navbar */
+  display: flex;
+  flex-direction: column; /* Ensure proper stacking */
+  background-color: #121212; /* Match app background */
+  width: 100%; /* Full width */
+  min-height: calc(100vh - 70px); /* Full height minus navbar */
+}
+
+/* Content */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align content vertically */
+  align-items: center; /* Center align content horizontally */
+  padding: 20px;
+  background-color: #282c34; /* Content background color */
+  color: white;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap; /* Wrap navbar items on smaller screens */
+    height: auto;
+  }
+
+  .content {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}

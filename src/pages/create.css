@@ -1,0 +1,135 @@
+:root {
+  --macaroni-and-cheese: #fbc57a;
+  --aubergine: #1f050e;
+  --shocking-pink: #fa12c0;
+  --crusta: #f98227;
+  --pomegranate: #f92821;
+  --rose: #f51c81;
+  --rose-bud-cherry: #910a45;
+  --international-orange: #fa560e;
+  --champagne: #fbf1cf;
+  --tobacco-brown: #746443;
+}
+
+body {
+  background-color: var(--aubergine);
+  color: var(--champagne);
+  font-family: "Bangers", system-ui;
+  margin: 0;
+}
+
+
+.create-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100vh - 40px); /* Full viewport height minus padding */
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(
+    to bottom right,
+    var(--pomegranate),
+    var(--rose),
+    var(--shocking-pink)
+  );
+}
+
+.card {
+  background-color: var(--aubergine);
+  border-radius: 15px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center; /* Center the card content */
+}
+
+.create-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--champagne);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center align the form */
+}
+
+label {
+  font-size: 1rem;
+  color: var(--champagne);
+  font-weight: 500;
+  text-align: left; /* Align labels to the left */
+  width: 100%; /* Make labels span full width */
+}
+
+input,
+textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid var(--macaroni-and-cheese);
+  border-radius: 8px;
+  background-color: var(--champagne);
+  color: var(--aubergine);
+  width: 100%; /* Make input fields full width */
+  max-width: 100%; /* Prevent overflow */
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--rose);
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical; /* Allow resizing vertically only */
+}
+
+button.create-button {
+  padding: 15px 25px;
+  background: linear-gradient(
+    to right,
+    var(--international-orange),
+    var(--crusta)
+  );
+  color: var(--champagne);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  border: none;
+  text-transform: uppercase;
+  width: 100%; /* Button spans the full width */
+  max-width: 100%; /* Prevent overflow */
+}
+
+button.create-button:hover {
+  transform: scale(1.05);
+  background: var(--pomegranate);
+}
+
+.success-message,
+.error-message {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.success-message {
+  color: var(--macaroni-and-cheese);
+}
+
+.error-message {
+  color: var(--rose-bud-cherry);
+}
+
