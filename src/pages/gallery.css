@@ -33,9 +33,16 @@
 
 /* Sort Dropdown */
 .sort-container {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  margin-bottom: 20px; /* Spacing from the title */
+  display: flex;
+  justify-content: center; /* Center dropdown */
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-label {
+  font-size: 1.2rem;
+  color: var(--champagne);
 }
 
 .sort-select {
